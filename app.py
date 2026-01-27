@@ -105,10 +105,12 @@ if df is not None:
                 st.success("Analysis Complete!")
                 st.write(response)
                 
+                
         except Exception as e:
             st.error(f"An error occurred: {e}")
 else:
     st.info("Please upload a dataset to get started.")
+
 
 
 
