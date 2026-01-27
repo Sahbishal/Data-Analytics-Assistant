@@ -89,6 +89,7 @@ if df is not None:
                 openai_api_version=st.secrets["AZURE_API_VERSION"],
                 temperature=0
             )
+
             
             agent = create_pandas_dataframe_agent(
                 llm,
@@ -107,6 +108,7 @@ if df is not None:
             st.error(f"An error occurred: {e}")
 else:
     st.info("Please upload a dataset to get started.")
+
 
 
 
