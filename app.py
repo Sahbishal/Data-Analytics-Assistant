@@ -66,6 +66,7 @@ if df is not None:
                 st.pyplot(fig)
             except Exception as e:
                 st.error(f"Plotting Error: {e}")
+                
 
     st.header("SQL Query")
     with st.expander("Run a SQL Query"):
@@ -108,6 +109,7 @@ if df is not None:
             st.error(f"An error occurred: {e}")
 else:
     st.info("Please upload a dataset to get started.")
+
 
 
 
