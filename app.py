@@ -33,6 +33,7 @@ with st.sidebar:
     else:
         df = None
 
+
 if df is not None:
     st.header("Data Preview")
     st.dataframe(df.head())
@@ -110,6 +111,7 @@ if df is not None:
             st.error(f"An error occurred: {e}")
 else:
     st.info("Please upload a dataset to get started.")
+
 
 
 
