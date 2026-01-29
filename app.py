@@ -78,7 +78,8 @@ if df is not None:
                 st.write(query_result)
             except Exception as e:
                 st.error(f"SQL Error: {e}")
-                
+
+    
     st.header("Query the Data")
     user_query = st.text_input("Ask a question about your data:")
     
@@ -111,6 +112,7 @@ if df is not None:
             st.error(f"An error occurred: {e}")
 else:
     st.info("Please upload a dataset to get started.")
+
 
 
 
